@@ -1,0 +1,47 @@
+.navbar-dark .navbar-nav .nav-link {
+    color: rgb(255 255 255)!important;
+    font-weight: 400px;
+}
+.travel{
+    box-sizing: border-box !important;
+    border: 4px black solid !important;
+    display: flex !important;
+}
+.my-card{
+    width: 350px !important;
+    margin-top: 20px !important;
+    margin-bottom :30px;
+    border: black solid 2px !important;
+    border-radius: 5px !important;
+   
+}
+.banner{
+    
+    height: 700px;
+    background-color:grey;
+    background-image:url("https://static.wixstatic.com/media/38c4af340de54c78b4e1869be78ef1fd.jpg/v1/fill/w_1410,h_794,fp_0.50_0.50,q_90/38c4af340de54c78b4e1869be78ef1fd.webp");
+    background-size: 100% 100%;
+    display: flex;
+    align-items:center;
+    justify-content: flex-end !important;
+    
+    
+}
+.banner_content {
+    
+    height: auto;
+    background-color:rgba(255,255,255,0.6);
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    margin-top: 400px;
+}
+
+.padd{
+    padding: 30px;
+}
+
+.banner_title{
+    font: size 60px;
+}
+

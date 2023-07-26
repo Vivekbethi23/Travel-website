@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/project1.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+ 
+    <!-- ICON -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <title>TRAVELER</title>
+
+    <link  style="box-sizing: 3px;" rel = "icon" href ="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBYVFRgVFhUYGBgYGRoeHRwYGBgaHxwYGhwaGhoYHBgcIS4lHB4rIRwZJjgmLS8xNTU1HCQ7QDszPy40NTEBDAwMBgYGEAYGEDEdFh0xMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMf/AABEIAOEA4QMBIgACEQEDEQH/xAAbAAEAAgMBAQAAAAAAAAAAAAAAAQIDBgcFBP/EAEsQAAIBAgUBBgMEBAkICwAAAAECAAMRBAUSITFBBgcTIlFhMnGBFJGhsRUjQsEXJFJUYnKC0vAzNGR0kpOU0RY1Q0Rjc4SipMLx/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AObxEQEREBJVZZBvJUkneBFiDtJdrEypNuDKwEREBERAyILC8nkXlVbpBaAL+0pEQEREBLId5WIGQ88yKhldUiAiIgIiSovAlPxkGZBtKu3ygUiIgIiICZEG15jl0aBYbiV1mC0pAREQERJUXgCNveRMrLcczGRAiIiAiIgJZZCi8yDYf45gY253kS7t0lICIiAiJYKYFlT1khbEbfWTpvvMZc7wJL+m31lIiAiIgJJEKJkZb/P84GKJJEiAiIgIiXQffAqFMyKtunreRq23Eq54ECXaUnqZb2fxWIBNHDu4FtwLDfg3a1wbczBmeU18MwSvSemx4DjY/JhcN14PSB8UREBMip6yoSZAAfe0CAtiNvrKF+g/Ob/3cdkKGND1a9TUEfT4CNpOwHmdh5tJvtptwd+g2POsXk6ucDicKaK0/gfwmQEk3Yo9Pz2OxLcG+/EDjcTo2Zd2gqKa2X4hK9Mi6q7C/wAlqL5T7XA9z1mi5nllbDvor0npMeA4sD/VYeV/oTA+OIkgQCreZFHTpPYw/ZPHsutcJWK+umxI9QrEMfunj1lZGZGVlZTYhgQyn0KncH5wMfHWREQEREBERAyKPb5yHaHPvKQEREBERAsglmNuJO1pDt0gRUcGbxknYFHp06mLxK4c1gGp0wAXKncE3O1x+yBfcb32mhutwR6idHzbAJnC0MRQxNBKqUUp1KFZyhUqSdSkAkqSx6WItuDcQPf7a9rRlyUsNgxT1lLk6Vsi7BW0KApZiCfQaTtuJ8GSdu8Li6D0M0CXUhgdDaXUcGyXKuD6WuCCOoHjUe67EE74nCi5F9Lu23U20C5Hp19RPv8A4JWIFsbTv1/VlgTvx5xa23rfc7cQL9q+x2ErYQ47L2UKis7AFyrovxWDbo62O219wRfecxUXnXcwNHJ8uqYRa3i4jEB9uLNURUZ9IvoVVAIBPmI5325IFI4gWA6dJjOx2MszWJlCYH04DH1KDrVouyOvDKbe9iOGX1U3BnTsB2uwWZ0xhsxRKdT9moDZNRFtSOd6TezGx4ub2nLnwlRVLNTcKOWKOFHzYiwnsdn+yGLxtmpUrIf+0qEonzBtdv7IMDYM37JY/K3avhajtSv8VMXcDoatKxVgLnzWIHNlns5D3iNjCuGr4H7QWXzeEFqBtju1J7Kq+5YibLkdBcqw4TF5grqB5VcKgXk6KYJLvxYC/TYDiaxnfeXTpoUwVJVXc6yAqqxdix8MCzaub3/aPWB93aDu9wCqK5qNg12LqWVlF+QAxOlug0kj0BmtHtRgcGdOX4UPUG32jEgk/NVNm+nkHsZ4tLKcdmD+KUqOzXtUqBgtvRbjdf6KAgegmwP2EoYVQ+YY1KYN/LTuWYWOyXGpjexuEPFrdYGtVu1ePq1QRiaxdmsq02KgknZVprYH0tY/Wex3oH9ZhhU0nFDCp9oKgC7m2m9tr31/QjpaXqdssNhbrl2DRG48euNT+l1S9xt6sPdZpWKxL1HapUdndzqZmNyzHqfytwAABsIGKIiAmQJKId5kPMCNB9Ylr+0QMMREBETJ4UCuj3lj09P3wy3+chjYWgfflGT1sU/hYemXe2o7hQqjqzMQB+/pebtgu7ilRo+NmOJNC5IC02Tbm13ZW1GwJso+pmTuezihS8ejUqLTdyjKXIXUApBUMdrjm3ubdZsGbdivtWn7TmT1Up69A0UUIN/OWZRZiLWvp2++4aXmvd1V0itgXXFYdl1KQyh7dRbZWI9rHkabjfRmXoR9CP3Gddw/ZXC5fXTEfpEolIl9DVELMrAjTpUC4PFgDe33cwzjFrWxFasq6VqVXYL6B2LC9uu+/veB55pL/JH3CWp0Vv8ACt+mw5mVBteSLEQKJz0/KbpkPdvi8QquxXD02AIL3ZyDwfDFrf2ip9ppbPt0nXsv7MYzEUEbH5hUp0tK2pUiiHSbAK9RRZr+UWs255vA1/MaGVZadLI+PxAFzrYLSW421W8v0s5HttPs7ts3yymFFZEo4kF7VKnwkMzFQjsSEIVgvmsTbk7z48T2kwGCYpl+EWrVuV8evqe7HbyAnU1/QFB85Ts93cVa6mtimOGQm9iqq5Ui5bSdkF9rMBa3FrQOr5rjMQFD4SlRxC2Nw1bQSeQFIRlP1I5E5j2u7xcah8FaP2HYfGNTkf0WYBQvS4B+YmXOM9w2WrTp5ZXapUD+cNUerRKAMNLLfSDqt8Gki254B+3A96iGmWxFAGsnwKmqzEnkFgdFhtzv9bANayfsPj8c/iVi9NTuauI1s7XufLTJDN05Kix2vxNnoplWVHV432jELtYFKjA+ygaaf13+fXU+0neBisUzBHahSZdJRHButybl9Ia52BtYWFupvqAFuIG9Z73mYqtdaNqCHqvmf/bIsv0APvNIq1Gdi7szs3LMxZifUsdz9ZWICIiAiWWQ3O8CJOoyIgTeJEQERECy8y5veYpOowLVDMZMmdN7B5TQwuFbNMSoZt/BVreUAldQvtqYg2PRRtyRA0Wj2dxbgFcJiWDcHwKljfrqK2t78S57LY1Df7HiAR1Wi5443UTfMF3hZjiGqNh8GKlNTbSqu5S48up1+Juuw9Nupw1u1WdlwVwtVQCDpOFdlPSxbSDb5EGBpB7OYw+b7JiST18God/c6ZjbIMWOcHih/wCmrfnonR37S58LfxOkNr2NNgbepvW2HqdrdZ8mNzXP6Jas6HwwC2kJhqiqp6fq/PYfPjkmxMDRlyLF2/zPFW9fs1f+5IGSYo8YPFH5Yav/AHJtmD7cZxiQ/wBnQPpAuaVANp1XsRqLb7cG/wApT9O9oL2/jV/9Sp/LnwbQNS/QeK/mmK/4at/cn0VMBmDKFajjmRRZValiWVRxZVK2At6Tb1zLtCCL+Ketmo4UXFwDsFBtci/pcTPjM17QU01Mh0gaiyJh38vuE1H7hA1PIlx+Dq+NRwlcNoZLvhazABiCSBp2byjf5+sx5qmZYk6sRTxlT2ahW0j+qgQIv0AnpZf2zzfEPoo13qOVJCpRw5OkWuwsnHHPrPtbOe0A5+1f8JTPvyKUDUlyXE/zXEj54eqP/rMhyTEkf5tiL/8AkVfx8s3Bcw7QEKb19+NVHDIb2uNmQG9r7fOZjW7Q6QymqQSeFwZIsbEFLar39RcQNEbJsSP+7Yj6UKv92R+h8T/NsR/uKv8Admy4LtVnVZ2p061ZnW+pBh6OpbGx1g0/LvtvbefVVznP1GpjiQB1+y0ja3ralA0R1KkqwIYcgggg+hB3EidCy3PUzQjB5giLWN1o4hF0MtTojrxuRa2wJsLA2M0bMcA+HqvRqrpdG0sORfkEHqpBBB9CIHzSVF5dV9ZOmxG31gBx/jmVdukFvTb6ykBERAREQLp6/hKTKBaUc+28CsREBOp9uXVckwCrtq+z2FiL2oOx2+frOWGdQ7xWvlGXdL+CdO382ff6Xt/a+UD1P0rUwGSYWth0QNppFg6sQfEuzmyspuWN734JmsJ3q47qmHt1/V1Afoddh9QZ7vbAE5DhNz8GE2PLfq+P3/ScpUW6QN/XvUxgAvTok24AYKfU2LE/+6er2G7ZYnG4lqGIKNT8FmIVNJuhQatQPxHV0sL8ATlTtN27ok/j5I6UX/Erv+X3wN3zDM2wOVePhUQHxSbOtwRVrtc2VlvfVsRtbgAWtpX8K2O/k4f/AHb356HxLD03B+s2HtOb9n6BBtdMMbbC4JXy2XYAA3txtORwOgL3sYzk06N/ZWA5vcgsTxtyPWet2I7a4nG4wUK/hmk1N7qqW+HcMWvz06D2E5TN17pUvmCH0p1PxFv+UDc+ydTwsNmeIoqA4r12UuLhvDpIy6itgQWLEgWALMBNTXvTx4FymG/3b2+7xPrzNn7Lb5RjjfSdWLIPFjovsF439Jx93BtA3z+FXGfyKJ9wGBO23JI5344295nyvvJxtbFUEPhBKlampVUN9LsiEaiSbC5b13O5Frc5nq9lk1Y3Cj/SKR+51P7oHcvJh6eOxFFFDprJuF3NKnqVTYjyi9gCRYW9pznCd7OLDA1KdFl6hFdT0+G7n8b89JvdB7pm1xcCpUuLDf8AitHoOdrbnc/ScCXgQOvdvMjTH0FzHBkFkQs2kkM6L5hsNxUXc2Nm6cgCa/mS/pTBDFKB9swqha6gC9WjuVqgDqPM30cfyZXuu7ReBWOGc/qa5OxFwtQgAN8iBpP0PSVx9N8mzEPTH6s7hRw9NrF6Y+W1vQhebbhpagHre0ozG5my9t8jShUTEYffC4kaqRXhCd2pe1uQPS4t5TNYgIiICIl0ECkTJrPp+EQIL+l5SIgIiIENwZ1zvLNsswag3F6exHNqLWN/UenW59JyUC9/lOrd5htlmAP9OkLen8Xf/lAt2uqA5Fhb+UsmF2uefDJIHrwTb2M5S5950rLO3eCfC0sNjsM1TwgtvJTqKSilVazMCGsbcdTvMrdqsjIAOXg2UD/NaNwOLX1dPW8DlpM6H3NIpxFdjuVRALdNQqXuegsv4ietQ7YZKgIXBBN7i2Gpgki1twduv0+dpnq95WBo0iuGotqsQEVAii6kggkW0hrAi3qQD1DD2l27PUFI0nThhbjcMt7D6E2+fpOSzpGRducGcHTwmOw71BSCgHQlRW0AhWKswIa23B559PsbtRkhC3y9fhA3w1HUOlr36et4HKyZ0LufRTinbkqgHTbUH3PoLKR9R6b+vQ7W5KgIXBhLm4thqYuRa24NxxPo/hJwNFD9notq6IieGo1KCTe1hZrAi3QkX2uEdlSBk+PuAtjixuSP2Ovpa9vpOPib/wBju1qYTDvh8dh6r0q5Z1fQLVBUAFQaX0hl66gT8VvSeoO1WR20/o8WDHY4aienIu3X0gcsmwdgkVswwwO9nLWFiTpVjtf05+k3bDdq8kU3XAhb7EnDUjYHngnYAm9vpefbh+8LLKKs1Kiyva4VaWksVFlDNa2oj9rfa1z0Aezh/Kmbte36xzzwBhKO+3HBnA0XidU7N9sQ5xr1sNWfDVajMzJT1oiaFTRUsLElFUH0AF9t581btVkzPtlhNgAD4VFQfYqH+fI6QOcIWUhlJBBBBGxBG4N+hnWc4w36VytcSgBxNIMbAAN5D+spiwudt1HW69TeeU/bLKth+ilNgB/k6A443veZafeRhqKsuEwHhuRpWwRFv0LBN3t0HO5FxcwPF7E5hTr03yvENanXN6DdaWI5FvZjuB1Nxvrmq5jgXoVXo1F0vTYqw6X5BB6gggg+hExV6T03KuHR0O4YFWVhuCQbEHg/dNy7zhqq4XEEWavhabPbjULm/wBzAfJRA0mIiBkQWF5PIvKq3SC0B4hiUiAiIgIliksbcfjAMBb1/fOo95zj9GYH3ekRtbYYepvbpzOVuQAZ1bvTW2WYEH4g9If/AB6l/wAYHKIiICBBkowvyIF/Chlv85J5lahgGO1piqfCfkZaY658jf1T+UDtHeJh6T0cvSs5pUmqgO6gXVfBPFwQNwBwbfSefUyPIERmOKDg7AiszlTyLLT3vseQeszd8thh8Iv9M/cEt++clgZcUqB3CMWQMwRiLFkBOliOhIsbSEG15jlle3MDtvdqR+irngmvcetmYfumr9msjyd6FF62LBrMil1aqtMhyo1LpADWU33B6czZewP/AFMjA9a3HvWcflOIpwPkIGw9r6OBWsPsLl0IJYWeytfYKz7tt9Jg7IKDjsKCAR49Pn+uJ4893sQmrMMKP/GU/wCzdv3QNj75cMFxlNwFGulvbklGI1MPkVAP9H2nx94Q/V5bf+Y0/wAkmbvga+OAvxRTbY2uXPrt8vr1mPvE8yZcf9Cpn8FgaURt7yJlZbjneYyIEREQEREAJfRITmXub+0CGW/zkOdrQ53lIFXGx+U653qPqyzBHbepSO3+r1eD6bzkpnVu31LxMlwNVN1p/Z2PsrUWQX99TIPrA5TNk7H9j62PclSEpIwD1GF7G19Cr+01iPQAEE9AfHynL3xFenh02eo4UE72vuzEdQqgt9J1/PabU1oZNgDod01VHvulAGzuxFiXZr3O17221AgPirHJMr8rBa9debgVqmq1jcmyUzY8eXnifMO8HLHISrgNFNuC9Kiwv1Ohb/hc/KWxGPy/J2Whh8OMVihszGxZWIFgX0mxYkeRB897XwV+8HHAM2Jy39RezBqVZAASBZndSp4I4G5HyIfbi+xeX4+k1TLqyI4ANgxK3IvpqI13p3+QI9DxOWZnl9XD1Wo1lKOnIPUHhlI2ZT0InQ62V0a1I5plGqjVpXNSgvQABnVUF9Jt+yPKwGwvz9na2jTzPLEzCmL1aK3a3lOlTashFyLDdx7Db4jcOTSlX4W+R/KXlKvwt8j+UDr/AHyEHC4VhsDU2+Rpkj8pyQjbmda73h/FcHb+X+Hh/wD5Oedm8mOLxNKgOHN3IvsijU5uONhYH1YQPW7Hdg62OtUY+Fh7/GRdnsdwi/hqOw6atwNvxj5XlhFGnhzia5+IoyVKikW2Y6tVO+2yqAfSe9jVqtUp5fhX8GmlLVWqooDKgYIqU7bU2OlgDbYBrWKzwM07X4bL2ODy7DLUqL5WYXK6xe4JW71nHXcb381wQA9Cv3j4amumrg8ZSS3NSiFF/TzML77TXf8AojgswVny6siMBdqbgoVO9tSAbKSLAqABufNxLjvHx1O32zAjwmsDejWo3BtaxqXUn267biZs0ymk9IZtlDGm9K7PTVbDYA1F0D4WA5QeVhxuQSHMsbhHou9KopR0Yqym2xHy2I4IPUEGZ8nzFsNXpV1AJpuGsf2gOVvY2uLi9tr3m/8AbeimYYKjmVJQGVStZR0sLsCf2tBBsfT6W5sg++B6vafO3xuIbEMgQsqqqBtQVVFgNRAvuSeBzNh7wkITLl5tg0B+gUTUMNSLuiAbu6oABc3YgCw6nfibX3n1FWvh8MpucNhqaMdvjIvY++kIf7UDTXaUiICIiAiIgJbWZWICIiAnR+77tNQag+W40/qqmoIzmyhX5plr3U3JZW6Ha4ss5xLqkDtnZfu/p4PFDFJX8SmEcKrINQLbavEU2YWuPhHMxYHMBpzXMqZDkEpTY/CVoUV02t+yXYn3FjOO06jIGRWdVYHUoYgMLWNwDY7bbzo3dXWTEUMXl7sQHUsu4vpdfDqFf6pCH+0IFu7ynToYbFZpXUvUR3AOxY2ClmW/Du7EE+3uZ9/Y/t/VxuKOHrUaYp1EbSFDHTpW5VySQwI1b2HQdZ4vZDOEwBxGWZimlKjG5KsV84CG4G/huoBDDixv7ezl9TJctZ69GuKr2IVVqeKQCB5VC7cqPM1yL8gQM2TZcMFnLUKIApYigamgE+TS1rnmy/HYX5YcWAlOyFSlTxmY5azAI9RmpqTYEOpFRFv1CtTFv6LHoZHYV3xuLr5pUBp01Q0kF7AoG1t5hbVpKrc8Es3pOb9sccuIxtequ6s4sTvsqqo6DjT6bAAb2uQ32n3O25xt/lh7ff8ArJgfukViyLj1v1HhXYDjdRUFpzYVGO5ZiRuLsTv6zJ9pfTpLsAQBbU1rLuotfgHcDpA712s7K/bqFOiawRqTBtXh6tXk0kadQ03Jvz0nm9m+ydHKi+Kq4jWfDKklAoALBjpUEsSdKi252PracUOJcEMHcMDfUHYG9tN9QN76dr+m0ipinY3Z3YkFbs7E6Ta63J4Nht7CB2TLs60Zbi8cl3ZqlUI24OgVDTpHccAHWR6s3BJnl9g1pYHK6uY6NdU6wLg3AR/DSnqAJClgGY++/Ep3WV6eIwuJy9/2gzC5O6VAFYgceVtJ/tCfP2NzhcH42V5ioRCW3fZPNs4LG3kYXYN7ng2ED0ex3bx8dXODxdKky1g4XShA2UsabqxYMCoO+3HW+3zdjlXBZziMEhc0nUgBrmxCLWW/NwFZ11Hc7X3M9tEyjLR9rQpqZW0aahqFtrFUBY2PwgkcXubC9vC7F6quIxGdYoCnTVXZdudtPkHJ0oum/LFj6wK9lHpI+Y5Y9RURqlQUgzaVsrOrICdgQoT5gHbYzzj3b1Bb+O4S37RLsLe4Fjf7xNNx2J8Z3qsN6ju5HNmqMXI+QJt9J8zgcWH3QOi/bMvytdVF1xuMsdLr/k6ZIIuSGKjrsCW4+Hmc9xWJao71HYu7sWZjyWJuT7fLgcTFEBERASVF4Vby1iOIFvDEmWiB88REBESVF4EqDMhXrIG49vWUDEbQBeZ8ux9TD1ErUmKuhupH3EEdQQSCOoM+aIHWsN2yy3MFC5hQSm6iwZrsu/OiqoDJ6kGw43Np89HA5Bhzrat9o5srM1UbC/wooB9N9tz9OWxA3ztb3gtXT7PhENCgBpJFlZl2sqquyLsdrkkHpuJoqrKzJYWEATY8SKjA8SXPSY4CIiB9OXY+ph6iVaTFHQ3U/mCOoPUTqlLtvl+OphMdSVGHAZS4DbDUr6fKd788A39DyKZAkDqFXMOz9Fmq06Ot9xpVKliRwVWoQgGxsRtvNW7XdsqmNtT0+Fh1tppqb3t8LOethayjYH1sDNYZb/OQxsLQIJ2sJWIgIiICXQbyUG15I3ECFJvvKk24MnWZSAiIgIiXQcmBVVvLIbG0lN7yC54gGb75SIgIiICWKSdEllv84A24/GVJ2sJLnpKQEREBERAsvMueZik6jAtUMpEQEREBEkiRAujQWlIgIiICIiBlVQBvHuJAbaQzQBf0EpEQEREBLJzKxAy739pVzvI1mVgIiICIkgQLJ6/hKTKBaUc+28CsREBERASVEaTLqPb5wJZb/P8AOYyJZ2lICJDE225lLt6f4++BkiYyW9B/i/v8pcQJiIgIiICIiAiIgIiICIiAiIgJZP3GIgZR0mCIgIiICBEQM0GIgYYiICIiAiIgIiIH/9k=">
+  </head>
+
+  <body>
+        <!-- Navbar content -->
+        <nav class="navbar fixed-top navbar-expand-lg  navbar-dark bg-primary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">NAVIGATOR</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav    m-auto">
+                  <li class="nav-item mr-a">
+                    <a class="nav-link active" aria-current="page" href="#1">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#2">About Us</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown
+                    </a>
+                    <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#3">Travel</a></li>
+                      <li><a class="dropdown-item" href="#4">Restaurents/Hotels</a></li>
+                      <li><a class="dropdown-item" href="#5">Relax</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#6">Packages</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#7">Contact Us</a>
+                  </li>
+                  
+                </ul>
+               
+              </div>
+            </div>
+          </nav>
+ 
+        <!-- CAROSAL HOME -->
+
+          <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" >
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+
+
+            <div class="carousel-inner" id="1">
+              <div class="carousel-item active">
+                <img src="https://static.wixstatic.com/media/5bfb6f_26f1a5c736e544e09c63c82a4c792645~mv2_d_3839_1306_s_2.jpg/v1/fill/w_1470,h_713,al_b,q_85,usm_0.66_1.00_0.01/5bfb6f_26f1a5c736e544e09c63c82a4c792645~mv2_d_3839_1306_s_2.webp" class="d-block w-100" alt="First slide" style="width: 100%; height: 474px;  object-position: 1000% 100%;">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>First slide label</h5>
+                  <p>Some representative placeholder content for the first slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1577099701015-a730127bd657?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyc29uJTIwaW4lMjBuYXR1cmV8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80" class="d-block w-100" alt="Second Slide"  style="width: 100%; height: 475px;  object-position: 50% 100%;" >
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Second slide label</h5>
+                  <p>Some representative placeholder content for the second slide.</p>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <img src="https://m.economictimes.com/thumb/msid-68721417,width-1200,height-900,resizemode-4,imgsize-1016106/nature1_gettyimages.jpg" class="d-block w-100" alt="Third Slide"  style="width: 100%; height: 475px;  object-position: 50% 100%;" >
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Third slide label</h5>
+                  <p>Some representative placeholder content for the second slide.</p>
+                </div>
+              </div>
+
+
+              <div class="carousel-item">
+                <img src="https://previews.123rf.com/images/puhhha/puhhha1802/puhhha180200005/94655107-people-jumping-outdoors-group-of-friends-having-fun-in-nature-happy-young-people-in-colorful-clothes.jpg" class="d-block w-100" alt="..." style="width: 100%; height: 475px;  object-position: 50% 100%;">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Fourth slide label</h5>
+                  <p>Some representative placeholder content for the third slide.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <!-- CAROSAL HOME END -->
+
+
+          <!-- ABOUT US -->
+
+          <div class="container-fluid">
+              <div class="row justify-content-evenly pt-5 pb-3 " id="2">
+                  <div class="col-md-5">
+                      <h4>ABOUT US</h4>
+                      <p class="pt-2">I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you.
+                        This is a great space to write long text about your company and your services. You can use this space to go into a little more detail about your company. Talk about your team and what services you provide.
+                        Tell your visitors the story of how you came up with the idea for your business and what makes you different from your competitors. Make your company stand out and show your visitors who you are.</p>
+                  </div>
+                  <div class="col-md-5 ">
+                      <img src="https://static.wixstatic.com/media/90cf860d8e3548fdb4808f676ee3e05d.jpg/v1/fill/w_621,h_654,al_c,q_85,usm_0.66_1.00_0.01/90cf860d8e3548fdb4808f676ee3e05d.webp " class="img-thumbnail img-fluid "  alt="IMAGE" style="height: 320px; width: 100%;">
+                  </div>
+                
+              </div>
+              <!-- line -->
+              <hr>
+            
+          
+
+          <!-- ABOUT US END -->
+
+
+          <!-- TRAVEL STARTS -->
+       
+        <h3 id="3" class="text-center pt-2 pb-3"><b>Travel</b></h3>
+      <div class="container">
+        <div class="row justify-content-evenly" >
+          <div class="card my-card" style="width: 18rem;" id="cards">
+            <img src="https://cdn.travelpulse.com/images/faa9edf4-a957-df11-b491-006073e71405/c0594e9a-dd27-41b9-b02b-0c0362deadce/630x355.jpg" style="height: 250px;" class="card-img-top pt-3" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Paris</h5>
+              <hr>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+
+
+
+          <div class="card my-card" style="width: 18rem;" id="cards">
+            <img src="https://thumbs.dreamstime.com/b/london-tower-bridge-sunrise-sunny-summer-day-shot-against-blue-clear-sky-shining-sun-118438573.jpg" style="height: 250px;" class="card-img-top pt-2" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">London</h5>
+              <hr>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+
+
+          <div class="card my-card" style="width: 18rem;" id="cards">
+            <img src="https://static.toiimg.com/thumb/msid-55090610,width-748,height-499,resizemode=4,imgsize-491403/.jpg" style="height: 250px;" class="card-img-top pt-2" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Los Vegas</h5>
+              <hr>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+    
+       
+         
+          <div class="card my-card" style="width: 18rem;" id="cards">
+            <img src="https://cdn.theculturetrip.com/wp-content/uploads/2016/06/24498998325_f451c67aae_o.jpg" style="height: 250px;" class="card-img-top pt-3" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Charminar</h5>
+              <hr>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+
+
+
+          <div class="card my-card" style="width: 18rem;" id="cards">
+            <img src="https://images.unsplash.com/photo-1564507592333-c60657eea523?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80" style="height: 250px;" class="card-img-top pt-2" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Taj Mahal</h5>
+              <hr>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+
+
+          <div class="card my-card" style="width: 18rem;" id="cards">
+            <img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Z29hJTIwYmVhY2h8ZW58MHx8MHx8&w=1000&q=80" style="height: 250px;" class="card-img-top pt-2" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Goa</h5>
+              <hr>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+
+        </div>
+
+        </div>
+          
+
+        <!-- TRAVEL ENDS -->
+          <hr>
+
+        <!-- RESTAURENT STARTS -->
+
+        <div class="container-fluid">
+          <div class="row justify-content-evenly" id="4">
+
+            <h3 class="text-center"><b>RESTAURENT'S</b></h3>
+            
+ 
+            <div class="card my-card" style="width: 18rem;">
+              <img src="https://media.gettyimages.com/photos/the-taj-mahal-palace-hotel-at-dusk-picture-id520443060?s=612x612" class="card-img-top pt-2" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Hotel-Taj</h5>
+                <hr>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Single Bed-room</li>
+                <li class="list-group-item">Delux</li>
+                <li class="list-group-item">Super Delux</li>
+              </ul>
+              <div class="card-body">
+                <a href="#" class="card-link text-decoration-none text-info">Menu</a>
+              </div>
+            </div>
+
+
+            <div class="card my-card" style="width: 18rem;">
+              <img src="https://en-media.thebetterindia.com/uploads/2019/04/Paradise-Secunderabad-1.jpg" class="card-img-top pt-2" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Hotel-Paradaise</h5>
+                <hr>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Single Bed-room</li>
+                <li class="list-group-item">Delux</li>
+                <li class="list-group-item">Super Delux</li>
+              </ul>
+              <div class="card-body">
+                <a href="#" class="card-link text-decoration-none text-info">Menu</a>
+              </div>
+            </div>
+
+
+
+            <div class="card my-card" style="width: 18rem;">
+              <img src="https://im1.dineout.co.in/images/uploads/restaurant/sharpen/2/y/i/p20747-1452184296568e92e857138.jpg?tr=tr:n-large" style="height: 230px;" class="card-img-top pt-2" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Kritunga Restaurent</h5>
+                <hr>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Single Bed-room</li>
+                <li class="list-group-item">Delux</li>
+                <li class="list-group-item">Super Delux</li>
+              </ul>
+              <div class="card-body">
+                <a href="#" class="card-link text-decoration-none text-info">Menu</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <hr>
+
+      <!-- RELAX STARTS -->
+     
+        <div class="banner container-fluid" id="5">
+          <div class="banner_content col-lg-6 col-md-12  ">
+            <div class="padd">
+              <h1 class="banner_title">Relax</h1>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi autem, enim itaque est accusamus sunt fugit consectetur beatae sed nam dignissimos eaque repellendus deserunt dolorem laudantium minima adipisci impedit. Odio?</p>
+            </div>
+          </div>
+        </div>
+       
+      <!-- RELAX ENDS -->
+
+
+      <!-- PACKAGES STARTS -->
+      <div class="container-fluid pt-3" id="6">
+        <div class="row justify-content-evenly">
+          <h3 class="text-center pb-3">PACKAGES</h3>
+
+          <div class="card my-card">
+            <div class="card-body">
+              <h2 class="card-title">Super Deluxe </h2>
+              <ul class="list-group">
+                <li class="list-group-item">6 Days & 5 Nights</li>
+                <li class="list-group-item">1700000</li>
+                <li class="list-group-item">15 Destinations</li>
+                <li class="list-group-item">Private Jet</li>
+                <button class="btn btn-primary mt-5"> View Details</button>
+              </ul>
+            </div>
+          </div>
+
+
+
+          <div class="card my-card">
+            <div class="card-body">
+              <h2 class="card-title">Deluxe </h2>
+              <ul class="list-group">
+                <li class="list-group-item">6 Days & 5 Nights</li>
+                <li class="list-group-item">700000</li>
+                <li class="list-group-item">10 Destinations</li>
+                <li class="list-group-item">Private Boat</li>
+                <button class="btn btn-primary mt-5"> View Details</button>
+              </ul>
+            </div>
+          </div>
+
+          
+
+          <div class="card my-card">
+            <div class="card-body">
+              <h2 class="card-title">Single-Room</h2>
+              <ul class="list-group">
+                <li class="list-group-item">6 Days & 5 Nights</li>
+                <li class="list-group-item">500000</li>
+                <li class="list-group-item">8 Destinations</li>
+                <li class="list-group-item">Rented Car</li>
+                <button class="btn btn-primary mt-5"> View Details</button>
+              </ul>
+            </div>
+          </div>
+  
+  
+
+        </div> 
+      </div>
+
+
+      <!-- CONTACTUS STARTS -->
+
+<div class="container-fluid">
+  <div class="row justify-content-evenly " id="7" style="background-color: #f1f1f1;">
+    <div class="col-md-4">
+      <h3 class="mb-3 mt-5">CONTACT US</h3>
+      <p>house number:20-1-110. <br> kokapet. <br>hyderabad. <br><i class="bi bi-telephone"></i>:9701140302 <br>
+        <i class="bi bi-whatsapp"></i>:8919537120 </p>
+    </div>
+    <div class="col-md-4">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30458.317418380906!2d78.30163510744288!3d17.397880546172846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb94f4e1d3755d%3A0x428574ce0b943d2d!2sKokapet%2C%20Hyderabad%2C%20Telangana%20500075!5e0!3m2!1sen!2sin!4v1689314952970!5m2!1sen!2sin" style="width: 100%;"
+       height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </div>
+  
+      </div>
+            <!-- CONTACTUS END -->
+
+
+
+
+
+         
+        
+
+          <!-- FOOTER -->
+
+     <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12 text-white text-center bg-secondary p-2">
+          <p >&copy; 2020-2024.VIVEK All Rights Reserved</p>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+   
+  </body>
+</html>
